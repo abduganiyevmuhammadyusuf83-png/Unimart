@@ -58,8 +58,7 @@ a {
 .contact-btn {
   padding: 10px 15px;
   border: 1px solid #007bff;
-  background: white;
-  cursor: pointer;
+  background-color: #DDDDDD;
 }
 
 .icons span {
@@ -110,6 +109,9 @@ a {
   top: 214px;
   left: 105px;
 }
+
+/* PRODUCT KATALOG */
+
 .name-katalog {
     width: 2700px;
     font-size: 26px;
@@ -134,8 +136,74 @@ a {
 
 .divider {
     display: block;
-    width: 1460px;
-    height: 1px;
+    width: 1480px;
+    height: 2px;
     background-color: #DDDDDD;
     margin: 10px auto 20px auto;
 }
+ /* Best Offers */
+ .name-best-offers {
+    width: 2700px;
+    font-size: 26px;
+    font-weight: bold;
+    padding-left: 120px;
+    margin-top: 100px;
+ }
+  .best-offers-pictures {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin: 40px;
+ }
+    .best-offers-pictures img {
+    width: 370px;
+    height: 770px;
+    }
+
+   .sort {
+     padding: 10px 15px;
+     border: 1px solid #007bff;
+     background: white;
+     cursor: pointer;
+   }
+   .best-offers-btn {
+    padding-left: 30px;
+    margin-left: 1020px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    background: white;
+    cursor: pointer;
+   }
+     
+   .filtr {
+     padding: 10px 15px;
+     border: 1px solid #007bff;
+     background: white;
+     cursor: pointer;
+   }
+   .choose {
+     padding: 10px 15px;
+     border: 1px solid #007bff;
+     background: white;
+     cursor: pointer;
+   }
+   /* Aksiya */
+    .name-aksiya {
+     width: 2700px;
+     font-size: 26px;
+     font-weight: bold;
+     padding-left: 120px;
+     margin-top: 100px;
+    }
+    .aksiya-pictures {
+       display: flex;
+       justify-content: center;
+       padding: 10px;
+       gap: 40px;
+       margin-top: 10px;
+       margin: 90px;
+    }
+     .aksiya-pictures img {
+       width: 1300px;
+       height: 360px;
+     }
