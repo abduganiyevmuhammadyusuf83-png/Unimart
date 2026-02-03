@@ -164,6 +164,7 @@ a {
      padding: 10px 15px;
      border: 1px solid #007bff;
      background: white;
+     color: gray;
      cursor: pointer;
    }
    .best-offers-btn {
@@ -179,12 +180,14 @@ a {
      padding: 10px 15px;
      border: 1px solid #007bff;
      background: white;
+     color: gray;
      cursor: pointer;
    }
    .choose {
      padding: 10px 15px;
      border: 1px solid #007bff;
      background: white;
+     color: gray;
      cursor: pointer;
    }
    /* Aksiya */
@@ -270,7 +273,7 @@ a {
             margin-top: 100px;
     }
 
-h1 {
+ h1 {
   font-size: 32px;
   margin-bottom: 20px;
 }
@@ -337,6 +340,8 @@ h1 {
 /* list */
 .list {
   border-top: 1px solid #ddd;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .item {
@@ -353,3 +358,139 @@ h1 {
 .item small {
   color: #888;
 }
+
+/* Experts */
+.experts-label {
+  width: 2700px;
+  font-size: 26px;
+  font-weight: bold;
+  padding-left: 120px;
+  margin-top: 100px;
+}
+.experts-pictures {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 40px;
+  margin-top: 50px;
+  margin: 90px;
+}
+.experts-pictures img {
+  width: 370px;
+  height: 440px;
+}
+/* Reviews */
+.reviews-label {
+  width: 2700px;
+  font-size: 26px;
+  font-weight: bold;
+  padding-left: 120px;
+  margin-top: 100px;
+}
+.reviews-content {
+  display: flex;
+  gap: 60px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.medium {
+  font-size: 20px;
+  margin-left: 80px;
+}
+
+.left {
+  margin-left: 110px;
+  
+}
+.add-button {
+  margin-top: 50px;
+  padding: 15px 40px;
+  background: #c60000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.stars {
+  color: #c60000;
+  font-size: 24px;
+  margin-top: 30px;
+}
+.reviews-p {
+  margin-top: 20px;
+}
+.bar{
+  width: 260px;
+  height: 20px;
+  background: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+.fill {
+  height: 100%;
+  background: #c60000;
+}
+.w80 { width: 80%; }
+.w40 { width: 40%; }
+.w15 { width: 15%; }
+.w5  { width: 5%; }
+button {
+  background: #c60000;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+}
+/*Props */
+.props {
+  width: 420px;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  margin-left: 150px;
+}
+
+.props h3 {
+  margin-bottom: 20px;
+}
+
+.prop {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.label {
+  width: 120px;
+  color: #333;
+}
+
+.segment {
+
+  display: flex;
+  gap: 6px;
+}
+
+.seg {
+  width: 40px;
+  height: 8px;
+  background: #eee;
+  border-radius: 6px;
+}
+
+.seg.active {
+
+  background: #c60000;
+}
+
+.prop b {
+  width: 30px;
+  text-align: right;
+}
+
