@@ -57,8 +57,9 @@ a {
 
 .contact-btn {
   padding: 10px 15px;
+  color: #358BC5;
   border: 1px solid #007bff;
-  background-color: #DDDDDD;
+  background-color: #E5E5E5;
 }
 
 .icons span {
@@ -78,6 +79,7 @@ a {
 .catalog-btn {
   padding: 10px;
   background: #eee;
+  color: #333;
   border: none;
   margin-left: 80px;
 }
@@ -85,12 +87,13 @@ a {
 .search-bar input {
   flex: 1;
   padding: 10px;
+
 }
 
 .search-btn {
-  padding: 10px 15px;
+  padding: 10px 1px;
   background: #6B7FA0;
-  color: white;
+  color: black;
   border: none;
   margin-right: 80px;
 }
@@ -112,6 +115,25 @@ a {
 
 /* PRODUCT KATALOG */
 
+.product-katalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.katalog-card {
+  margin: 0px;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+.katalog-card img {
+  width: 410px;
+  height: 100%;
+  object-fit: cover;
+}
+
 .name-katalog {
     width: 2700px;
     font-size: 26px;
@@ -121,95 +143,199 @@ a {
     margin-bottom: 30px;
 
 }
-.katalog-pictures {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    gap: 40px;
-    margin-top: 50px;
-    margin: 30px;
+.katalog-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(
+    to top,
+    rgba(104, 133, 66, 0.6),
+    transparent
+  );
 }
-.katalog-pictures img {
-    width: 340px;
-    height: 290px;
+.katalog-card h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 20px;
+  z-index: 2;
 }
+
 
 .divider {
     display: block;
-    width: 1480px;
+    width: 1700px;
     height: 2px;
     background-color: #DDDDDD;
     margin: 10px auto 20px auto;
 }
  /* Best Offers */
- .name-best-offers {
-    width: 2700px;
-    font-size: 26px;
-    font-weight: bold;
-    padding-left: 120px;
-    margin-top: 100px;
- }
-  .best-offers-pictures {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    margin: 40px;
- }
-    .best-offers-pictures img {
-    width: 370px;
-    height: 770px;
-    }
 
-   .sort {
-     padding: 10px 15px;
-     border: 1px solid #007bff;
-     background: white;
-     color: gray;
-     cursor: pointer;
-   }
-   .best-offers-btn {
+.container {
+  width: 1200px;
+  margin: 40px auto;
+}
+
+/* Title */
+.title h2 {
+  font-size: 28px;
+  padding-bottom: 15px;
+}
+.sidebar {
+  background: #f9f9f9;
+  padding: 20px;
+  
+}
+
+/* Top bar */
+.best-offers-btn {
+    display: flex;  
     padding-left: 30px;
     margin-left: 1020px;
     margin-top: 40px;
     margin-bottom: 10px;
     background: white;
     cursor: pointer;
-   }
-     
-   .filtr {
-     padding: 10px 15px;
-     border: 1px solid #007bff;
-     background: white;
-     color: gray;
-     cursor: pointer;
-   }
-   .choose {
-     padding: 10px 15px;
-     border: 1px solid #007bff;
-     background: white;
-     color: gray;
-     cursor: pointer;
-   }
+  }
+
+/* Layout */
+.layout {
+  display: flex;
+  gap: 30px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.sidebar li {
+  padding: 10px;
+  color: #777;
+  cursor: pointer;
+}
+
+.sidebar li.active {
+  color: black;
+  border-left: 3px solid red;
+}
+
+/* Products */
+.products {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Card */
+.card {
+  border: 1px solid #eee;
+  padding: 15px;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Badges */
+.badges {
+  margin: 10px 0;
+}
+
+.badges span {
+  font-size: 12px;
+  padding: 3px 6px;
+  color: white;
+  margin-right: 5px;
+}
+
+.blue { background: #3498db; }
+.darkblue { background: #0E2F83; }
+.green { background: #2ecc71; }
+.red { background: #e74c3c; }
+
+/* Price */
+.card h3 {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.old {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 14px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
    /* Aksiya */
-    .name-aksiya {
-     width: 2700px;
-     font-size: 26px;
-     font-weight: bold;
-     padding-left: 120px;
-     margin-top: 100px;
-    }
-    .aksiya-pictures {
-       display: flex;
-       justify-content: center;
-       padding: 10px;
-       gap: 40px;
-       margin-top: 10px;
-       margin: 90px;
-    }
-     .aksiya-pictures img {
-       width: 1300px;
-       height: 360px;
-     }
+    .aksiya-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.aksiya-card {
+  margin: 0px;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+.aksiya-card img {
+  width: 410px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name-aksiya {
+    width: 2700px;
+    font-size: 26px;
+    font-weight: bold;
+    padding-left: 120px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+
+}
+.aksiya-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(
+    to top,
+    rgba(27, 23, 23, 0.6),
+    transparent
+  );
+}
+.aksiya-card h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 20px;
+  z-index: 2;
+}
+
+
+
    /* Service */
     .name-service {
       width: 2700px;
@@ -381,13 +507,11 @@ a {
 }
 /* Reviews */
 
-
-
 .reviews-label {
   width: 2700px;
   font-size: 26px;
   font-weight: bold;
-  padding-left: 120px;
+  padding-left: 140px;
   margin-top: 100px;
 }
 .reviews-content {
@@ -499,12 +623,18 @@ a {
 /* White Hills */
 .white-hills {
   width: 1500px;
-  margin: 50px auto 100px auto;
+  margin: 100px auto 100px auto;
   font-family: Arial, sans-serif;
   background-color: #DDDDDD;
   color: #333;
 }
 
+.white-hills-label {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+}
 .white-hills h3 {
   margin-bottom: 30px;
  
@@ -513,16 +643,19 @@ a {
 .white-hills-top {
   display: flex;
   gap: 40px;
+  margin-bottom: 30px;
 }
 
 /* Left */
 .white-hills-left {
  width: 380px;
+ 
 }
 .props-2 {
   width: 420px;
   font-family: Arial, sans-serif;
-  margin-left: 5px;
+  margin-left: 40px;
+  
 }
 
 .props-2 h3 {
@@ -565,15 +698,24 @@ a {
 
 /* White-hills-Right */
 .white-hills-right {
-  justify-content: space-between;
+  flex-direction: row;
   gap: 20px;
   position: relative;
 }
 
-.rectangel img {
+.rectangle-2 img {
+  margin-left: 60px;
   width: 260px;
   height: 170px;
   object-fit: cover;
+}
+.rectangle-2 {
+  display: flex;
+  gap: 15px;
+}
+
+.note {
+margin-left: 80px;
 }
 
 .arrow {
@@ -586,11 +728,6 @@ a {
 }
 
 /* Text */
-.zoom {
-  margin: 15px 0 30px;
-  font-size: 14px;
-  color: #777;
-}
 
 h3 {
   margin: 25px 0 10px;
@@ -599,7 +736,12 @@ h3 {
 
 .text {
   line-height: 1.6;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  
+}
+.two-text {
+  
+  gap: 40px;
 }
 
 .more {
@@ -607,17 +749,18 @@ h3 {
   text-decoration: none;
   font-weight: bold;
 }
+.white-hills-bottom {
 
-/* Bottom */
-.review-bottom {
-  margin-top: 30px;
-  padding-top: 15px;
-  border-top: 1px solid #ddd;
+  margin-left: 40px;
+  color: #3D3D3D;
   font-size: 14px;
 }
 
+/* Bottom */
+
 .share {
   float: right;
+  margin-right: 30px;
   color: #1a73e8;
   cursor: pointer;
 }
@@ -639,7 +782,6 @@ h3 {
 
 .col {
   flex: 1;
-  
 }
 
 .logo {
